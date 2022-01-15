@@ -1,6 +1,6 @@
 :root {
   --first-color: rgb(82, 82, 82);
-  --second-color: #f2f2f2;
+  --second-color: #fffdfd;
   --third-color: #ffffff ; 
   --fourth-color: rgb(114, 204, 226);
   --fifth-color: rgb(95, 121, 175);
@@ -15,6 +15,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif; 
   background-color: var(--second-color);
+  
 }
 
 header {
@@ -79,7 +80,7 @@ footer h2 {
 }
 
 footer nav {
-margin: auto 0;
+margin: auto;
 
 }
 
@@ -96,7 +97,7 @@ footer nav ul li a {
   border-bottom: 4px solid var(--fifth-color);
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 1.25vw;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: var(--fifth-color);
@@ -129,13 +130,18 @@ section {
   font-weight: lighter;
 }
 
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .about-me {
   margin-bottom: 50px;
 }
 
 .about-me h2 {
   text-align: right;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0 0;
   padding: 80px 10px 0 0;
   font-size: 40px;
   color: var(--fifth-color);
@@ -143,22 +149,21 @@ section {
 }
 
 .about-me p {
-  margin: 0 auto 0 auto;
-  width: 77.8%;
+  margin: 0 auto 0 0;
+  width: 80%;
   line-height: 1.5;
   font-size: 18px;
   color: var(--first-color);
 }
 
-article{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.work {
+  margin: 0 auto;
+  padding: 60px;
 }
 
-article h2 {
+.work h2 {
   text-align: right;
-  margin: 0 auto 0 auto;
+  margin: 0 0 0 0;
   padding: 80px 10px 0 0;
   border-right: 3px solid var(--fifth-color);
   font-size: 40px;
@@ -166,35 +171,53 @@ article h2 {
 }
 
 .main-project {
-height: auto;
-margin: 0 auto 0 auto;
+  margin: 0 0 20px 0;
 }
 
 .main-project a img {
-  height: 100% ;
-  width: 1000px;
-  border: 5px solid var(--fourth-color);
-  
-  
+  border: 7px solid var(--fourth-color);
+  height: 100%;
+  width: 100%;
 }
 
 .grid {
-  /* display: grid;
+  display: grid;
+  flex: 1 1 0;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: auto auto; 
-  grid-gap: px; 
+  grid-gap: 10px; 
   grid-auto-flow: column; 
-  height: 500px;
-  width: 1000px;
-  margin-left: auto; */
-
+  min-width: 350px;
 }
 .grid a img { 
-  height: 200px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   border: 7px solid var(--fourth-color);
+}
+
+.img-header {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .flex {
   display: flex;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: var(--fourth-color);
+  color: var(--fifth-color);
+  margin: 0 0 0 0 ;
+}
+
+.bottom-left h3 {
+  
+}
+
+.bottom-left p {
+ 
 }
