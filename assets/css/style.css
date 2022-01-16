@@ -15,7 +15,6 @@
 body {
   font-family: Helvetica, Arial, sans-serif; 
   background-color: var(--second-color);
-  
 }
 
 header {
@@ -63,6 +62,13 @@ header nav ul li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav ul li a:hover {
+background-color: var(--fourth-color);
+color: var(--first-color);
+border-radius: 10px;
+text-shadow: none;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -101,6 +107,12 @@ footer nav ul li a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: var(--fifth-color);
+}
+
+footer nav ul li a:hover {
+  background-color: var(--fifth-color);
+  color: var(--third-color);
+  border-bottom: none;
 }
 
 section {
