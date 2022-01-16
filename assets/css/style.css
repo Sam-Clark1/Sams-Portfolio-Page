@@ -150,7 +150,8 @@ section {
 .about-me img {
   width: 250px;
   height: 300px;
-border: 5px solid var(--fourth-color);
+  border: 5px solid var(--fourth-color);
+  margin-top: 20px;
 }
 
 .about-me p {
@@ -161,10 +162,7 @@ border: 5px solid var(--fourth-color);
   color: var(--first-color);
 }
 
-.work-header {
-  margin-right: auto;
-  border-right: 3px solid var(--fifth-color);
-}
+
 
 .work h2 {
   text-align: right;
@@ -203,7 +201,6 @@ border: 5px solid var(--fourth-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  
 }
 
 .grid div {
@@ -227,4 +224,88 @@ border: 5px solid var(--fourth-color);
 
 .box {
   margin: 10px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20%;
+  left: 0px;
+  background-color: var(--fourth-color);
+  padding: 4%;
+  color: var(--first-color);
+  font-size: 16px;
+}
+
+@media screen and (max-width: 980px) {
+  .content {
+    padding: 30px;
+  }
+  
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer nav ul li {
+    margin-bottom: 25px;
+  }
+
+  footer nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, .about-me h2, .work h2 {
+    text-align: center;
+    margin: 0 auto 10px auto;
+    padding: 20px 0 0 0;
+    font-size: 30px;
+    border-right: 0px;
+    border-bottom: 5px solid var(--fifth-color);
+  }
+
+  .about-me p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .main-app {
+    margin: 0 auto;
+  }
+
+  .main-app a img {
+    height: 300px;
+  }
+
+
+  .grid a {
+    width: 100%;
+  }
+
+  .grid a img {
+    height: 200px;
+    width: 250px;
+  }
+
 }
