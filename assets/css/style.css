@@ -131,8 +131,7 @@ section {
 }
 
 .content {
-  width: 80%;
-  margin: 0 auto;
+  padding: 60px;
 }
 
 .about-me {
@@ -148,6 +147,12 @@ section {
   border-right: 3px solid var(--fifth-color);
 }
 
+.about-me img {
+  width: 250px;
+  height: 300px;
+border: 5px solid var(--fourth-color);
+}
+
 .about-me p {
   margin: 0 auto 0 0;
   width: 80%;
@@ -156,68 +161,70 @@ section {
   color: var(--first-color);
 }
 
-.work {
-  margin: 0 auto;
-  padding: 60px;
+.work-header {
+  margin-right: auto;
+  border-right: 3px solid var(--fifth-color);
 }
 
 .work h2 {
   text-align: right;
-  margin: 0 0 0 0;
   padding: 80px 10px 0 0;
-  border-right: 3px solid var(--fifth-color);
   font-size: 40px;
   color: var(--fifth-color);
+  margin-right: auto;
+  border-right: 3px solid var(--fifth-color);
 }
 
-.main-project {
-  margin: 0 0 20px 0;
+.main-app {
+  min-height: 100%;
+  width: 80%;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.main-project a img {
-  border: 7px solid var(--fourth-color);
-  height: 100%;
+.main-app a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.main-app a img {
+  height: 500px;
   width: 100%;
+  border: 7px solid var(--fourth-color);
+  text-align: center;
 }
 
 .grid {
-  display: grid;
-  flex: 1 1 0;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: auto auto; 
-  grid-gap: 10px; 
-  grid-auto-flow: column; 
-  min-width: 350px;
+  min-height: 100%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
 }
-.grid a img { 
-  height: 100%;
+
+.grid div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.grid a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.grid a img {
+  height: 300px;
   width: 100%;
   border: 7px solid var(--fourth-color);
 }
 
-.img-header {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.flex {
-  display: flex;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  background-color: var(--fourth-color);
-  color: var(--fifth-color);
-  margin: 0 0 0 0 ;
-}
-
-.bottom-left h3 {
-  
-}
-
-.bottom-left p {
- 
+.box {
+  margin: 10px;
 }
