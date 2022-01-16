@@ -17,6 +17,13 @@ body {
   background-color: var(--second-color);
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Begin header stlye */
 header {
   padding: 15px 25px;
   display: flex;
@@ -68,7 +75,9 @@ color: var(--first-color);
 border-radius: 10px;
 text-shadow: none;
 }
+/* End header stlye */
 
+/* Begin footer stlye */
 footer {
   display: flex;
   justify-content: space-between;
@@ -87,7 +96,6 @@ footer h2 {
 
 footer nav {
 margin: auto;
-
 }
 
 footer nav ul {
@@ -114,13 +122,9 @@ footer nav ul li a:hover {
   color: var(--third-color);
   border-bottom: none;
 }
+/* End footer stlye */
 
-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
+/* Begin hero style */
 .hero {
   background-image: url(../images/header3.jpg);
   background-size:cover;
@@ -141,11 +145,9 @@ section {
   opacity: 0.86;
   font-weight: lighter;
 }
+/* End hero style */
 
-.content {
-  padding: 60px;
-}
-
+/* Begin About Me style */
 .about-me {
   margin-bottom: 50px;
 }
@@ -173,9 +175,9 @@ section {
   font-size: 18px;
   color: var(--first-color);
 }
+/* End About Me style */
 
-
-
+/* Begin Work style */
 .work h2 {
   text-align: right;
   padding: 80px 10px 0 0;
@@ -253,10 +255,15 @@ section {
   color: var(--first-color);
   font-size: 16px;
 }
+/* End Work style */
+
+.content {
+  padding: 60px;
+}
 
 @media screen and (max-width: 980px) {
   .content {
-    padding: 30px;
+    padding: 20px;
   }
   
   header nav ul {
@@ -271,6 +278,10 @@ section {
 
   header nav ul li a {
     font-size: 20px;
+  }
+
+  footer {
+    padding: 0 20px 20px 20px;
   }
 
   footer nav ul {
