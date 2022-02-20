@@ -46,6 +46,7 @@ header h1 {
 header a {
   text-decoration: none;
   color: var(--fourth-color);
+  
 }
 
 header nav {
